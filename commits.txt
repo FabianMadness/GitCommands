@@ -1,0 +1,107 @@
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+ADD FILES TO STAGING:
+
+For all files:
+git add -A 
+
+For a single file:
+git add [file name]
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+REMOVE FILES FROM STAGING:
+
+For all files:
+git rm --cached -r .
+
+For a single file:
+git rm --cached [file name]
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+PREPARE FILES TO COMMIT:
+
+git commit 
+
+Then, if you are using CMD instead editor:
+Press I to write.
+Add a Title and a Description about all commit changes.
+Then press ESC and write :wq
+Then press ENTER
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+UPDATE REMOTE REPOSITORY:
+
+git push origin [branch name]
+
+Example:
+git push origin production
+git push origin develop
+git push origin testing
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+UPDATE LOCAL REPOSITORY:
+
+git pull origin [remote branch name]
+
+Note: 
+This will update local repository with all changes on remote.
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+PREVIEW CHANGES ON REMOTE REPOSITORY:
+
+git fetch origin [remote branch name]
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+SEND LOCAL REPOSITORY TO A REMOTE ONE:
+
+git remote add origin [url]
+
+Example:
+git remote add origin https://github.com/AmyFoosh/amyfoosh.github.io.git
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+SHOW ALL COMMITS:
+
+git log
+
+Or:
+
+git log --oneline
+
+If you wanna exit from git log display, press Q.
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+MODIFY LAST COMMIT INFORMATION:
+
+git commit --amend
+
+Note:
+Avoid using this command.
+Must be used ONLY into local repositories to prevent issues on
+remote repositories.
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+UNDO LAST COMMIT: 
+
+To KEEP changes on files commited:
+git reset --soft HEAD~1
+
+To REMOVE all changes on files commited:
+git reset --hard HEAD~1
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+CHECK REMOTE REPOSITORY:
+
+git remote -v
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
