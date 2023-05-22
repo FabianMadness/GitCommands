@@ -1,0 +1,62 @@
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+BRANCH STATUS:
+
+git status
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+ADD BRANCH:
+
+git branch [branch name]
+
+Or:
+
+git checkout -b [branch name]
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+REMOVE BRANCH:
+
+git branch -d [branch name]
+
+Note: 
+You should be in another branch for security.
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+LIST ALL BRANCHES:
+
+git branch
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+CHANGE BRANCH:
+
+git checkout [branch name]
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+MERGE TWO BRANCHES:
+
+git merge [branch name]
+
+Note: 
+To merge two branches, you must be inside the branch
+that will receive the merge.
+
+Example, you are on production branch:
+git merge develop
+
+It will fuse both production and develop.
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+CHANGE BRANCH NAME:
+
+git branch -m [new branch name]
+
+Note:
+You must be in the branch that will be renamed.
+
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
